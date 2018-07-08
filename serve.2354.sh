@@ -1,15 +1,29 @@
 #!/bin/bash
+
+# On change le dossier courant pour le même que le fichier .sh
 chemin=$(dirname "$0")
-port=`expr "$0" : '.*[_\.]\([0-9]*\)\.sh'`
+cd "${chemin}"
+if [ -d "public" ]; then
+  cd public
+fi
+
+# On cherche le numero de port dans le nom du fichier
+port=`expr "$0" : '.*[_\.\-]\([0-9]*\)\.sh'`
+
+# On prend le port 8000 par défaut
 if [ ! $port ]
 then
-((port=8000))
+	((port=8000))
 fi
-cd "${chemin}"
+
+# On cherche le premier port non ouvert
 while [ -n "`netstat -atn | grep \".$port \"`" ]
 do
-((port=port+1))
+	echo "Le port '$port' est pris."
+	((port=port+1))
 done
-echo "Adresse du site : http://localhost:"$port
-start http://localhost:$port
+echo "On utilise le port '$port'."
+
+# On ouvre le fureteur et on démarre le serveur
+start "" "http://localhost:$port"
 php -S 0.0.0.0:$port

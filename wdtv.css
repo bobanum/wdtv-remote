@@ -12,7 +12,7 @@ body {
   align-items: center;
   color: white;
   background-color: #29296d;
-  background-image: url(../images/bruit2.png), radial-gradient(circle closest-corner at top, #ffffff, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background-image: url(images/bruit2.png), radial-gradient(circle closest-corner at top, #ffffff, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   background-size: 5em, auto;
 }
 body > * {

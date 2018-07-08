@@ -193,7 +193,7 @@ class Command {
 			key = key.key;
 		}
 		xhr = new XMLHttpRequest();
-		xhr.open("POST", "/php/wdtv.php");
+		xhr.open("POST", "/wdtv.php");
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		xhr.obj = this;
 		xhr.data = '{"remote":"' + key + '"}';
