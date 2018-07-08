@@ -1,0 +1,82 @@
+<root xmlns="urn:schemas-upnp-org:device-1-0"
+xmlns:ms="urn:microsoft-com:wmc-1-0"
+xmlns:dlna="urn:schemas-dlna-org:device-1-0"
+xmlns:pnpx="http://schemas.microsoft.com/windows/pnpx/2005/11"
+xmlns:df="http://schemas.microsoft.com/windows/2008/09/devicefoundation">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<pnpx:X_hardwareId>VEN_011A&amp;DEV_1101&amp;REV_01</pnpx:X_hardwareId>
+		<df:X_modelId>02BF98D2-1B50-4a1f-83D9-A85404010001</df:X_modelId>
+		<pnpx:X_compatibleId>MS_DigitalMediaDeviceClass_DMR_V001</pnpx:X_compatibleId>
+		<pnpx:X_deviceCategory>MediaDevices</pnpx:X_deviceCategory>
+		<df:X_deviceCategory>Multimedia.DMR</df:X_deviceCategory>
+		<deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+		<dlna:X_DLNADOC>DMR-1.50</dlna:X_DLNADOC>
+		<friendlyName>WDTV</friendlyName>
+		<manufacturer>Western Digital Corporation</manufacturer>
+		<manufacturerURL>http://www.wd.com</manufacturerURL>
+		<modelDescription>WD TV Media Player</modelDescription>
+		<modelName>WD TV</modelName>
+		<modelNumber>WDBYMN0000NBK</modelNumber>
+		<modelURL>http://products.wd.com/wdtv</modelURL>
+		<iconList>
+			<icon>
+				<mimetype>image/jpeg</mimetype>
+				<width>48</width>
+				<height>48</height>
+				<depth>24</depth>
+				<url>icon_logo4wmc_48x48.jpg</url>
+			</icon>
+			<icon>
+				<mimetype>image/jpeg</mimetype>
+				<width>120</width>
+				<height>120</height>
+				<depth>24</depth>
+				<url>icon_logo4wmc_120x120.jpg</url>
+			</icon>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>48</width>
+				<height>48</height>
+				<depth>24</depth>
+				<url>icon_logo4wmc_48x48.png</url>
+			</icon>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>120</width>
+				<height>120</height>
+				<depth>24</depth>
+				<url>icon_logo4wmc_120x120.png</url>
+			</icon>
+		</iconList>
+		<serialNumber>WN2452604956</serialNumber>
+		<UDN>uuid:9784699c-0090-a9f8-5568-6d70d77282bc</UDN>
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+				<SCPDURL>MediaRenderer_AVTransport/scpd.xml</SCPDURL>
+				<controlURL>MediaRenderer_AVTransport/control</controlURL>
+				<eventSubURL>MediaRenderer_AVTransport/event</eventSubURL>
+			</service>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+				<SCPDURL>MediaRenderer_ConnectionManager/scpd.xml</SCPDURL>
+				<controlURL>MediaRenderer_ConnectionManager/control</controlURL>
+				<eventSubURL>MediaRenderer_ConnectionManager/event</eventSubURL>
+			</service>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+				<SCPDURL>MediaRenderer_RenderingControl/scpd.xml</SCPDURL>
+				<controlURL>MediaRenderer_RenderingControl/control</controlURL>
+				<eventSubURL>MediaRenderer_RenderingControl/event</eventSubURL>
+			</service>
+		</serviceList>
+		<presentationURL>http://192.168.1.106:80/index.php</presentationURL>
+	</device>
+</root>

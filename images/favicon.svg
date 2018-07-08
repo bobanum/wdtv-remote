@@ -1,0 +1,11 @@
+<svg width="256" height="256" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<path id="path1058" d="m281.92 361.29v17.337h34.673v69.347h17.337v-69.347h34.676v-17.337zm92.192 0 34.676 86.683h17.337l34.673-86.683h-17.337l-26.006 65.013-26.006-65.013z"/>
+		<path id="path906" d="m391.45 286.43h34.673c9.5747 1.2e-4 17.337 7.7619 17.337 17.337-6e-3 3.0476-8e-3 14.294 0 17.337-1.3e-4 9.5747-7.7619 17.337-17.337 17.337h-34.673zm-17.337-17.337v86.683h52.01a34.674 34.674 0 0 0 34.673-34.673v-17.337a34.674 34.674 0 0 0-34.673-34.673zm-92.195 0 17.337 86.683h14.582l11.424-43.346 11.424 43.34 14.582 5e-3 17.337-86.683h-17.337l-8.6697 43.338-11.421-43.338h-11.83l-11.421 43.343-8.6697-43.343z"/>
+	</defs>
+	<g transform="translate(0 -229.27)">
+		<rect x="2.4044e-6" y="229.27" width="256" height="256" ry="64" fill="#00009a" fill-rule="evenodd" style="paint-order:markers stroke fill"/>
+		<use transform="translate(-244.59 -9.2673)" width="100%" height="100%" fill="#ffffff" xlink:href="#path906"/>
+		<use transform="translate(-244.59 6.7327)" width="100%" height="100%" fill="#afafff" style="font-variant-east_asian:normal;paint-order:markers stroke fill" xlink:href="#path1058"/>
+	</g>
+</svg>

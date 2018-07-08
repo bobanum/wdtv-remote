@@ -184,16 +184,13 @@ class Command {
 			cmd.execute();
 		});
 	}
-	static init() {
-
-	}
 	static execute(key, callback) {
 		var xhr;
 		if (key.key) {
 			key = key.key;
 		}
 		xhr = new XMLHttpRequest();
-		xhr.open("POST", "/php/wdtv.php");
+		xhr.open("POST", this.urlApi);
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		xhr.obj = this;
 		xhr.data = '{"remote":"' + key + '"}';
@@ -208,6 +205,9 @@ class Command {
 	execute() {
 		this.constructor.execute(this.key);
 		return this;
+	}
+	static init() {
+		this.urlApi = "/php/index.php";
 	}
 }
 Command.init();
